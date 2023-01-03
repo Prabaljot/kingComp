@@ -5,79 +5,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>King Computers : The Real King </title>
-    <link rel="stylesheet" href="css/utils.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>King Computer</title>
+    <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="">
-        <nav class="nav">
-            <ul class="bigMenu">
-                <li class=""><a class="" href="index.html">Home</a></li>
-                <li class=""><a class="" href="index.html">Products</a></li>
-                <li class=""><a class="" href="index.html">Offers</a></li>
-                <li class=""><a class="" href="index.html">About</a></li>
-                <li class=""><a class="" href="index.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active ">
-                    <img src="pavillion13.jpg" class="d-block" style="width: 1400px; height: 500px;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>HP Pavillon 13</h5>
-                        <p>i5 11thGen, 8gb ram, 1gb graphic card, 256gb M2. NvMe SSD</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="pavillion14.jpg" class="d-block" style="width: 1400px; height: 500px;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>HP Pavillon 14</h5>
-                        <p>i7 8thGen, 12gb ram, 2gb graphic card, 512gb M2. NvMe SSD</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="pavillion15.jpg" class="d-block" style="width: 1400px; height: 500px;">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>HP Pavillon 15</h5>
-                        <p>i7 11thGen, 16gb ram, 4gb graphic card, 1TB M2. NvMe SSD</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </main>
+    <header class="text-gray-600 body-font" id="menu">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="logo.png" alt="logo" class="w-10">
+                <span class="ml-3 text-xl">King Computers</span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="cursor-pointer mr-5 hover:text-gray-900">Home</a>
+                <a href="about.html" class="cursor-pointer mr-5 hover:text-gray-900">About</a>
+                <a href="#" class="cursor-pointer mr-5 hover:text-gray-900">Services</a>
+                <a href="#" class="cursor-pointer mr-5 hover:text-gray-900">Contact</a>
+            </nav>
+            <div class="">
 
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><i
+                        class="fa-solid fa-cart-shopping mr-2"></i> My Cart
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+                <button
+                    class=" ml-3 inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"><i
+                        class="fa-solid fa-right-to-bracket mr-2"></i>Account
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="text-gray-600 body-font">
+        <h1 class="text-5xl mx-10">Trending Products:</h1>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap m-4">
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion13.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 13</h2>
+                        <p class="mt-1">Rs. 55,330</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion14.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 14</h2>
+                        <p class="mt-1">Rs. 63,299</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion15.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 15</h2>
+                        <p class="mt-1">Rs. 72,500</p>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="victus15.webp">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Victus 15</h2>
+                        <p class="mt-1">Rs. 76,230</p>
+                    </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <!--  -->
+                <div class="hidden lg:block lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion13.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 13</h2>
+                        <p class="mt-1">Rs. 55,330</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion14.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 14</h2>
+                        <p class="mt-1">Rs. 63,299</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion15.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 15</h2>
+                        <p class="mt-1">Rs. 72,500</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4  md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="victus15.webp">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Victus 15</h2>
+                        <p class="mt-1">Rs. 76,230</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion13.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 13</h2>
+                        <p class="mt-1">Rs. 55,330</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion14.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 14</h2>
+                        <p class="mt-1">Rs. 63,299</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pavillion15.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 15</h2>
+                        <p class="mt-1">Rs. 72,500</p>
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-1/4  md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="victus15.webp">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Victus 15</h2>
+                        <p class="mt-1">Rs. 76,230</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="hidden  top text-gray-500 text-3xl lg:flex justify-center items-center  bg-gray-300 w-16 h-16 fixed bottom-24 right-10"
+        style="border-radius: 50%;">
+        <a href="#menu">
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    <div
+        class="hidden flex-col top text-gray-500 text-3xl lg:flex justify-center items-center  bg-gray-100 w-72 h-[460px] fixed top-20 right-10">
+        <img src="baljinder.jpg" alt="owner" class="object-cover object-center w-32 h-32 blocks"
+            style="border-radius: 50%;">
+        <h4 class="text-2xl">
+            Owner: Baljinder Singh
+        </h4>
+        <h4 class="text-2xl">
+            Mobile: +91 9417321655
+        </h4>
+        <h4 class="text-2xl">
+            Location: <a href="https://goo.gl/maps/QZNQe4Ki7iNWjr2HA" target="_blank"
+                style="text-decoration: underline;">Click Here</a>
+        </h4>
+    </div>
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="logo.png" alt="logo" class="w-10">
+                <span class="ml-3 text-xl">King Computers</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2023 King Computers
+                <span href="#" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></span>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500" href="">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <rect x="3" y="5" width="18" height="14" rx="4" />
+                        <path d="M10 9l5 3l-5 3z" />
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500" href="">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
 </body>
-<script>
-    function myFunction(x) {
-        x.classList.toggle("change");
-    }
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
 
 </html>
