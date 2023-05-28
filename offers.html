@@ -6,9 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Computer</title>
-    
+    <link rel="stylesheet" href="index-579b7990.css">
     <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="index-401d9e04.css">
+    <link rel="stylesheet" href="index-39fcdaed.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-light: #f1f5f9;
+            --bg-alert: #cacbce;
+            --bg-callout: #dbeafe;
+            --border-base: #cbd5e1;
+            --text-base: #475569;
+        }
+
+        .alert {
+            z-index: 100;
+            background: var(--bg-alert);
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            transform: scaleY(1);
+            transition: all ease-in-out .3s;
+        }
+
+        .alert button {
+            border: none;
+            background: transparent;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            right: 5px;
+        }
+
+        .alert button:hover {
+            background: rgba(255, 255, 255, .35);
+        }
+
+        .alert-hidden {
+            opacity: 0;
+            padding: 0;
+            visibility: hidden;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: all ease-in-out .3s;
+        }
+
+        .alert button:focus {
+            box-shadow: inset 0 0 0 2px var(--border-base);
+        }
+    </style>
 </head>
 
 <body>
@@ -40,31 +93,52 @@
             </div>
         </div>
     </header>
+    <div class="alert" role="alert">
+        <strong>How to buy? :</strong> You just have to call on +91 9478010000 to buy anything.
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <title>close</title>
+                <g fill="none">
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M17.25 6.75l-10.5 10.5"></path>
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M6.75 6.75l10.5 10.5"></path>
+                </g>
+            </svg>
+        </button>
+    </div>
+    <!-- <div class="auto-type-effect text-[2.5em] text-center">
+        Here are
+        <span class="auto-input"></span>
+    </div> -->
+
     <main>
-        <section class="text-gray-600 body-font relative">
-            <div class="absolute inset-0 bg-gray-300">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54299.13322130675!2d75.68018184621579!3d31.724202977382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x57e201e80a1af21f!2sKING%20COMPUTER!5e0!3m2!1sen!2sin!4v1672807936164!5m2!1sen!2sin"
-                    class="w-full h-full" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="container px-5 py-24 mx-auto flex">
-                <div
-                    class="lg:w-1/2 md:w-1/2 h-[70vh] bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
-                    <h2 class="text-gray-900 text-5xl m-10 font-medium title-font">Ways to contact :</h2>
-                    <ul>
-                        <li class="ml-10 text-2xl"><b>Email :</b> kingcomputertanda@gmail.com</li>
-                        <li class="ml-10 text-2xl"><b>Mobile :</b> +91 9427321655</li>
-                        <li class="ml-10 text-2xl"><b>Instagram :</b> kingcomputertanda</li>
-                    </ul>
-                    <div class="flex justify-evenly items-center">
-                        <img src="logo-a333c25d.png" class="m-7" width="200px" alt="logo">
-                        <h1 class="text-6xl">King Computers</h1>
-                    </div>
+        <section class="text-gray-600 body-font">
+            <h1 class="text-[2.4em] mx-10"></h1>
+            <div class="container px-5 pb-24 mx-auto">
+                <div class="flex flex-wrap m-4 flex flex-wrap m-4">
+                    <!-- <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                        style="border-width: 3px; border-radius: 10px;">
+                        <a class="block relative h-48 rounded overflow-hidden">
+                            <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                                style="border-width: 3px; border-radius: 10px;" src="pavillion13.jpg">
+                        </a>
+                        <div class="mt-4">
+                            <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
+                            <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Pavillion 13</h2>
+                        </div>
+                    </div> -->
+                   <h1 style="font-size: 3em;">Sorry we have currently <br> no discounts! 😔🥺</h1>
                 </div>
-            </div>
         </section>
     </main>
+    <div
+        class="hidden flex-col top text-gray-500 text-3xl lg:flex justify-center items-center bg-gray-100 w-72 h-[460px] fixed top-20 right-10">
+        <h1 style="font-size: 0.8em;">We hope that you liked us!</h1>
+        <p style="font-size: 0.6em;" href="#lap">We have toiled so much to provide you such a good online technology
+            platform.</p>
+    </div>
+
     <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
             <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -102,6 +176,24 @@
             </span>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed = new Typed(".auto-input", {
+            strings: ["Biggest Discounts", "Your savings"],
+            typeSpeed: 30,
+            backSpeed: 70,
+            loop: true
+        })
+        const alert = document.querySelector('.alert');
+        const dismissAlertButton = document.querySelector('.alert button');
+        if (dismissAlertButton) {
+            dismissAlertButton.addEventListener('click', event => {
+                event.preventDefault();
+                alert.classList.add('alert-hidden');
+                localStorage.setItem("hideAlert", true);
+            })
+        }
+    </script>
 </body>
 
 </html>
