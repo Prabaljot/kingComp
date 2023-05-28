@@ -6,9 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>King Computer</title>
-    
     <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="index-579b7990.css">
+    <link rel="stylesheet" href="index-579b7990.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-light: #f1f5f9;
+            --bg-alert: #cacbce;
+            --bg-callout: #dbeafe;
+            --border-base: #cbd5e1;
+            --text-base: #475569;
+        }
+
+        .alert {
+            z-index: 100;
+            background: var(--bg-alert);
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            transform: scaleY(1);
+            transition: all ease-in-out .3s;
+        }
+
+        .alert button {
+            border: none;
+            background: transparent;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            right: 5px;
+        }
+
+        .alert button:hover {
+            background: rgba(255, 255, 255, .35);
+        }
+
+        .alert-hidden {
+            opacity: 0;
+            padding: 0;
+            visibility: hidden;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: all ease-in-out .3s;
+        }
+
+        .alert button:focus {
+            box-shadow: inset 0 0 0 2px var(--border-base);
+        }
+    </style>
 </head>
 
 <body>
@@ -39,6 +91,20 @@
             </div>
         </div>
     </header>
+    <div class="alert" role="alert">
+        <strong>How to buy? :</strong> You just have to call on +91 9478010000 to buy anything.
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <title>close</title>
+                <g fill="none">
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M17.25 6.75l-10.5 10.5"></path>
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M6.75 6.75l10.5 10.5"></path>
+                </g>
+            </svg>
+        </button>
+    </div>
     <div class="auto-type-effect text-[2.5em] text-center">
         <span class="auto-input"></span>
     </div>
@@ -55,7 +121,12 @@
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Mac Books</h2>
-                        <p><details><summary><i><u>Click here for description.</u></i></summary> We deal in all kinds of Mac Books. Call us to find now on +91 9417321655.</details></p>
+                        <p>
+                        <details>
+                            <summary><i><u>Click here for description.</u></i></summary> We deal in all kinds of Mac
+                            Books. Call us to find now on +91 9417321655.
+                        </details>
+                        </p>
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
@@ -67,7 +138,13 @@
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Asus Gaming Laptops</h2>
-                        <p><details><summary><i><u>Click here for description.</u></i></summary> We provide all variants of Asus's powerful gaming laptops like TUF series and ROG series. Call us to find now on +91 9417321655.</details></p>
+                        <p>
+                        <details>
+                            <summary><i><u>Click here for description.</u></i></summary> We provide all variants of
+                            Asus's powerful gaming laptops like TUF series and ROG series. Call us to find now on +91
+                            9417321655.
+                        </details>
+                        </p>
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
@@ -79,7 +156,13 @@
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Cameraa</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Dahua Cameras</h2>
-                        <p><details><summary><i><u>Click here for description.</u></i></summary> We have all types of Dahua Cameras, ranging from 2mp to 5mp, colour or black & white, optical or wireless. Call us to find now on +91 9417321655.</details></p>
+                        <p>
+                        <details>
+                            <summary><i><u>Click here for description.</u></i></summary> We have all types of Dahua
+                            Cameras, ranging from 2mp to 5mp, colour or black & white, optical or wireless. Call us to
+                            find now on +91 9417321655.
+                        </details>
+                        </p>
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
@@ -91,7 +174,12 @@
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Desktops</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">HP Destops</h2>
-                        <p><details><summary><i><u>Click here for description.</u></i></summary> If you need HP destop of any configration just come to us. Call us to find now on +91 9417321655.</details></p>
+                        <p>
+                        <details>
+                            <summary><i><u>Click here for description.</u></i></summary> If you need HP destop of any
+                            configration just come to us. Call us to find now on +91 9417321655.
+                        </details>
+                        </p>
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
@@ -102,8 +190,14 @@
                     </a>
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Devices</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Zeberonics Zeb Warrior Spaekers</h2>
-                        <p><details><summary><i><u>Click here for description.</u></i></summary> These are powerful beast gaming speakers with RGB lights at a resonable price. Call us to find now on +91 9417321655.</details></p>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Zeberonics Zeb Warrior
+                            Spaekers</h2>
+                        <p>
+                        <details>
+                            <summary><i><u>Click here for description.</u></i></summary> These are powerful beast gaming
+                            speakers with RGB lights at a resonable price. Call us to find now on +91 9417321655.
+                        </details>
+                        </p>
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
@@ -115,12 +209,17 @@
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Devices</h3>
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Sony Headphones</h2>
-                        <p><details><summary><i><u>Click here for description.</u></i></summary> Want wireless headphones so you are at right place. Call us to find now on +91 9417321655.</details></p>
+                        <p>
+                        <details>
+                            <summary><i><u>Click here for description.</u></i></summary> Want wireless headphones so you
+                            are at right place. Call us to find now on +91 9417321655.
+                        </details>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>  
+    </section>
     <section class="text-gray-600 body-font">
         <h1 class="text-3xl font-medium title-font text-gray-900 mb-12 text-center">Testimonial</h1>
         <div class="container px-5 py-24 mx-auto flex justify-center items-center flex-col">
@@ -210,6 +309,15 @@
             backSpeed: 20,
             loop: true
         })
+        const alert = document.querySelector('.alert');
+        const dismissAlertButton = document.querySelector('.alert button');
+        if (dismissAlertButton) {
+            dismissAlertButton.addEventListener('click', event => {
+                event.preventDefault();
+                alert.classList.add('alert-hidden');
+                localStorage.setItem("hideAlert", true);
+            })
+        }
     </script>
 </body>
 

@@ -9,6 +9,59 @@
     <link rel="stylesheet" href="index-579b7990.css">
     <script src="https://kit.fontawesome.com/8d1230bf7d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index-39fcdaed.css">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg-light: #f1f5f9;
+            --bg-alert: #cacbce;
+            --bg-callout: #dbeafe;
+            --border-base: #cbd5e1;
+            --text-base: #475569;
+        }
+
+        .alert {
+            z-index: 100;
+            background: var(--bg-alert);
+            padding: 1rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            transform: scaleY(1);
+            transition: all ease-in-out .3s;
+        }
+
+        .alert button {
+            border: none;
+            background: transparent;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: absolute;
+            top: 8px;
+            right: 5px;
+        }
+
+        .alert button:hover {
+            background: rgba(255, 255, 255, .35);
+        }
+
+        .alert-hidden {
+            opacity: 0;
+            padding: 0;
+            visibility: hidden;
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: all ease-in-out .3s;
+        }
+
+        .alert button:focus {
+            box-shadow: inset 0 0 0 2px var(--border-base);
+        }
+    </style>
 </head>
 
 <body>
@@ -39,8 +92,22 @@
             </div>
         </div>
     </header>
+    <div class="alert" role="alert">
+        <strong>How to buy? :</strong> You just have to call on +91 9478010000 to buy anything.
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <title>close</title>
+                <g fill="none">
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M17.25 6.75l-10.5 10.5"></path>
+                    <path stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                        d="M6.75 6.75l10.5 10.5"></path>
+                </g>
+            </svg>
+        </button>
+    </div>
     <div class="auto-type-effect text-[2.5em] text-center">
-        Here are your
+        Here are
         <span class="auto-input"></span>
     </div>
     <section class="text-gray-600 body-font">
@@ -144,7 +211,8 @@
                     </a>
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Laptops</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Samsung Notebook 9 Pen</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Samsung Notebook 9 Pen
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -169,6 +237,17 @@
                     style="border-width: 3px; border-radius: 10px;">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="printers.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Devices</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">All Printers</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
                             style="border-width: 3px; border-radius: 10px;" src="SonyHeadphones.jpg">
                     </a>
                     <div class="mt-4">
@@ -180,11 +259,23 @@
                     style="border-width: 3px; border-radius: 10px;">
                     <a class="block relative h-48 rounded overflow-hidden">
                         <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="pendrive.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Devices</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Pen Drives</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
                             style="border-width: 3px; border-radius: 10px;" src="SamsungWondertainment80cmSmartTV.jpg">
                     </a>
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Devices</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Samsung Wondertainment SmartTV</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Samsung Wondertainment
+                            SmartTV</h2>
                     </div>
                 </div>
                 <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
@@ -195,7 +286,8 @@
                     </a>
                     <div class="mt-4">
                         <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Devices</h3>
-                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Dell wireless Keyboard Mouse.</h2>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Dell wireless Keyboard
+                            Mouse.</h2>
                     </div>
                 </div>
             </div>
@@ -216,6 +308,29 @@
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Hp Destops</h2>
                     </div>
                 </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="desktop.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Desktop</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Destops of your favouraite brand.</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="gaming_desktops.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Desktop</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">We sell all types of
+                            gaming desktops</h2>
+                    </div>
+                </div>
             </div>
 
     </section>
@@ -234,6 +349,61 @@
                         <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Any Laptop Charger</h2>
                     </div>
                 </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="ssd.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Others</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Normal SSD</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="hhd.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Others</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Hard Disk</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="nvmemessd.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Others</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Nvme. M2 SSD</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="gpu.jpg">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Others</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Every Graphic Card</h2>
+                    </div>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 p-4 w-full border-gray-500 m-1"
+                    style="border-width: 3px; border-radius: 10px;">
+                    <a class="block relative h-48 rounded overflow-hidden">
+                        <img alt="ecommerce" class="object-cover object-center w-full h-full block border-gray-300"
+                            style="border-width: 3px; border-radius: 10px;" src="ram.webp">
+                    </a>
+                    <div class="mt-4">
+                        <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">Others</h3>
+                        <h2 class="text-gray-900 title-font text-lg font-medium cursor-pointer">Every Type of RAM(s)</h2>
+                    </div>
+                </div>
             </div>
 
     </section>
@@ -243,7 +413,6 @@
         <a style="font-size: 0.6em;" href="#lap">Laptops</a>
         <a style="font-size: 0.6em;" href="#dev">Devices</a>
         <a style="font-size: 0.6em;" href="#desk">Desktops</a>
-        <a style="font-size: 0.6em;" href="#cam">Cameras</a>
         <a style="font-size: 0.6em;" href="#oth">Others</a>
     </div>
     <footer class="text-gray-600 body-font">
@@ -291,6 +460,15 @@
             backSpeed: 70,
             loop: true
         })
+        const alert = document.querySelector('.alert');
+        const dismissAlertButton = document.querySelector('.alert button');
+        if (dismissAlertButton) {
+            dismissAlertButton.addEventListener('click', event => {
+                event.preventDefault();
+                alert.classList.add('alert-hidden');
+                localStorage.setItem("hideAlert", true);
+            })
+        }
     </script>
 </body>
 
